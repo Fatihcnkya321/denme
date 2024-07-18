@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* RESET END */
+
+.container {
+    margin-inline: auto;
+    max-width: 1440px;
+}
+
+/* NAVBAR START */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    &>h2 {
+        font-size: 25px;
+        color: black;
+    }
+}
+
+.nav {
+    display: flex;
+    gap: 37px;
+
+    &>a {
+        font-size: 12px;
+        color: black;
+    }
+}
+
+.nav-btn {
+    color: white;
+    background-color: black;
+    width: 158px;
+    border-radius: 10px;
+}
+
+/* NAVBAR END */
+
+/* header START */
+
+.header {
+    background-image: url('../img/Bitmap\ \(5\).jpg');
+    padding-top: 28px;
+    height: 650px;
+width: 100%;
+
+}
+
+.header-inside {
+
+    padding-top: 132px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 387px;
+    gap: 30px;
+
+    &>h6 {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    &>h1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    &>p {
+        font-size: 15px;
+        color: white;
+        opacity: 60%;
+    }
+}
+
+/* HEADER END */
+
+/* CARDS START */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 360px;
+}
+
+.card-items {
+    position: relative;
+    width: 360px;
+
+}
+
+.mal {
+    width: 360px;
+}
+
+.card-inside {
+    position: absolute;
+    top: 340px;
+    left: 40px;
+    color: #fff;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &>p {
+        opacity: 60%;
+        font-size: 13px;
+    }
+
+    &>h2 {
+        font-size: 18px;
+    }
+}
+
+/* CARD END */
+
+.footer {
+    max-width: 1440px;
+    background-color: black;
+    display: flex;
+}
+
+.footer-inside {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.footer-bulamadim {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(width>=768px) {
+
+    
+
+    /* NAVBAR END */
+}
